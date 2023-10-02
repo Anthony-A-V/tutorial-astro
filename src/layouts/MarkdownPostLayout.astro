@@ -2,9 +2,6 @@
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-console.log(frontmatter.pubDate)
-console.log(frontmatter.pubDate.toLocaleDateString())
-
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
